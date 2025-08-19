@@ -2,11 +2,49 @@
 * {
     margin: 0;
     padding: 0%;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-appearance: none;
     appearance: none;
     font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+}
+
+.Principal {
+    background-color: rgb(28, 29, 122);
+    width: 1550px;
+}
+header{
+    display: flex;
+}
+input {
+    width: 383px;
+    height: 77px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 3px solid #91A1A8;
+    background: #91A1A8;    
+}
+
+h1 {
+    width: 415px;
+    height: 71px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.30);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(0deg, #FF6F61 0%, #FF6F61 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
 }
 
 body,
@@ -14,85 +52,28 @@ html {
     overflow-x: hidden;
 }
 
-.menu {
-    background-color: #131313;
-    position: fixed;
-    overflow: hidden;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 70px;
-    -webkit-transition: all 0.3s linear;
-    transition:  all 0.3s linear;
-    -webkit-transform: translateZ(0)
-    scale(1.1);
-    transform: translateZ(0)
-    scale(1.1);
-}
-
-.menu > ul {
-    margin: 5px 0;
-}
-
-.menu li {
-    position: relative;
-    display: block;
-    width: 250px;
-}
-
-.menu li > a{
-    position: relative;
-    width: 255px;
-    color: #8a8a8a;
-    display: table;
-    font-size: 16px;
-    text-decoration: none;
-    -webkit-transform: translateZ(0) scale(1, 1);
-    transform: translateZ(0) scale(1, 1);
-    -webkit-transition: all 0.15 linear;
-    transition: all 0.15s linear;
-}
-
-.menu .span-menu {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    width: 180px;
-}
-
-.lista {
-    background-color: #131313;
-    text-transform: capitalize;
-}
-
-.lista-logo,
-.li-empresa,
-.li-contato{
-    background-color: #131313;
-    text-transform: capitalize;
-}
-.menu li:hover a, nav.menu li.active > a{
-    color: #fff;
-    background-color: #282828;
-}
-nav{
-    -webkit-user-select: none;
-    user-select: none;
-    box-shadow:  0 0 10px #282828;
-}
-.fa{
-    position: relative;
-    width: 60px;
-    height: 40px;
-    text-align: center;
-    top: 12px;
-}
-.menu:hover, nav.menu.expanded{
-    width: 250px;
-    overflow: hidden;
-}
-.home{
+.home {
     width: 100%;
     height: 100vh;
+}
+
+main {
+    width: 1440px;
+    height: 1024px;
+    background: #c9111100;
+
+
+}
+
+.container :hover {
+    display: flex;
+    text-align: center;
+    width: 300px;
+}
+
+.container {
+    background-color: rgb(57, 79, 124);
+    width: 30px;
+    height: 1000px;
+    transition: 1s;
 }
