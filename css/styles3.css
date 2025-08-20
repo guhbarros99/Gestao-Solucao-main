@@ -44,8 +44,6 @@ body {
 .logo img {
     height: 40px;
     /* Ajuste o tamanho da sua logo */
-    background-color: #fff;
-    /* Placeholder background */
     border-radius: 50%;
 }
 
@@ -110,11 +108,12 @@ body {
 /* --- Sidebar --- */
 .sidebar {
     background-color: #91A1A8;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .sidebar nav ul {
@@ -129,13 +128,17 @@ body {
     font-size: 18px;
     font-weight: 500;
     display: flex;
-    width: 225px;
+    width: 240px;
     height: 50px;
     padding: 11px 0 10px 0;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-shrink: 0;
     background: #91A1A8;
+}
+.sidebar.fechada {
+  /* Move a barra 100% para a esquerda, escondendo-a */
+  transform: translateX(-100%); 
 }
 
 .sidebar nav ul li a {
@@ -201,4 +204,39 @@ body {
 .card.placeholder {
     min-height: 150px;
     /* Mesma altura aproximada dos outros cards */
+}
+
+.menu-icon i:hover {
+    color: #bdc3c7;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-icon i:hover {
+    color: #fff;
+}
+
+.menu-icon .fa-info-circle {
+    margin-right: 15px;
+}
+
+.menu .fa-bars {
+    margin-right: 10px;
+}
+
+.menu .fa-bars:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+
+.menu i {
+    font-size: 30px;
+    color: #bdc3c7;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
 }
