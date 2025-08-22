@@ -3,14 +3,14 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
-
+    
 /* Estilo da barra lateral (quando aberta) */
 .sidebar {
-    background-color: #91A1A8;
+    background-color: #00b3ff;
     width: 240px;
     height: 100vh; /* Altura total da tela */
     position: fixed; /* Fixa na tela */
-    top: 0;
+    top: 100px;
     left: 0;
     display: flex;
     flex-direction: column;
